@@ -1,1 +1,27 @@
 [19-Mar-2025 23:08:33 UTC] PHP Warning:  Undefined array key "host" in /workspaces/Lab-6/.wordpress/wp-includes/pluggable.php on line 1625
+[20-Mar-2025 00:53:53 UTC] PHP Warning:  Undefined variable $parent_theme_name in /workspaces/Lab-6/.wordpress/wp-content/mu-plugins/one-click-child-theme/templates/create_child_form.php on line 18
+[21-Mar-2025 04:05:52 UTC] PHP Fatal error:  Uncaught RuntimeException: GuzzleHttp requires cURL, the allow_url_fopen ini setting, or a custom HTTP handler. in /workspaces/Lab-6/.wordpress/wp-content/plugins/google-site-kit/third-party/guzzlehttp/guzzle/src/functions.php:105
+Stack trace:
+#0 /workspaces/Lab-6/.wordpress/wp-content/plugins/google-site-kit/third-party/guzzlehttp/guzzle/src/HandlerStack.php(39): Google\Site_Kit_Dependencies\GuzzleHttp\choose_handler()
+#1 /workspaces/Lab-6/.wordpress/wp-content/plugins/google-site-kit/third-party/guzzlehttp/guzzle/src/Client.php(64): Google\Site_Kit_Dependencies\GuzzleHttp\HandlerStack::create()
+#2 /workspaces/Lab-6/.wordpress/wp-content/plugins/google-site-kit/third-party/google/apiclient/src/Client.php(980): Google\Site_Kit_Dependencies\GuzzleHttp\Client->__construct(Array)
+#3 /workspaces/Lab-6/.wordpress/wp-content/plugins/google-site-kit/third-party/google/apiclient/src/Client.php(942): Google\Site_Kit_Dependencies\Google\Client->createDefaultHttpClient()
+#4 /workspaces/Lab-6/.wordpress/wp-content/plugins/google-site-kit/includes/Core/Authentication/Clients/Client_Factory.php(63): Google\Site_Kit_Dependencies\Google\Client->getHttpClient()
+#5 /workspaces/Lab-6/.wordpress/wp-content/plugins/google-site-kit/includes/Core/Authentication/Clients/OAuth_Client_Base.php(162): Google\Site_Kit\Core\Authentication\Clients\Client_Factory::create_client(Array)
+#6 /workspaces/Lab-6/.wordpress/wp-content/plugins/google-site-kit/includes/Core/Util/Health_Checks.php(109): Google\Site_Kit\Core\Authentication\Clients\OAuth_Client_Base->get_client()
+#7 /workspaces/Lab-6/.wordpress/wp-content/plugins/google-site-kit/includes/Core/Util/Health_Checks.php(86): Google\Site_Kit\Core\Util\Health_Checks->check_google_api()
+#8 /workspaces/Lab-6/.wordpress/wp-includes/rest-api/class-wp-rest-server.php(1292): Google\Site_Kit\Core\Util\Health_Checks->Google\Site_Kit\Core\Util\{closure}(Object(WP_REST_Request))
+#9 /workspaces/Lab-6/.wordpress/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/google-site-ki...', Array, NULL)
+#10 /workspaces/Lab-6/.wordpress/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#11 /workspaces/Lab-6/.wordpress/wp-includes/rest-api.php(449): WP_REST_Server->serve_request('/google-site-ki...')
+#12 /workspaces/Lab-6/.wordpress/wp-includes/class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#13 /workspaces/Lab-6/.wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#14 /workspaces/Lab-6/.wordpress/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#15 /workspaces/Lab-6/.wordpress/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#16 /workspaces/Lab-6/.wordpress/wp-includes/class-wp.php(813): WP->parse_request('')
+#17 /workspaces/Lab-6/.wordpress/wp-includes/functions.php(1336): WP->main('')
+#18 /workspaces/Lab-6/.wordpress/wp-blog-header.php(16): wp()
+#19 /workspaces/Lab-6/.wordpress/index.php(17): require('/workspaces/Lab...')
+#20 {main}
+  thrown in /workspaces/Lab-6/.wordpress/wp-content/plugins/google-site-kit/third-party/guzzlehttp/guzzle/src/functions.php on line 105
+[21-Mar-2025 04:30:10 UTC] PHP Warning:  Undefined variable $parent_theme_name in /workspaces/Lab-6/.wordpress/wp-content/mu-plugins/one-click-child-theme/templates/create_child_form.php on line 18
